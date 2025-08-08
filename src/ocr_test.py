@@ -1,6 +1,11 @@
 import easyocr
 import cv2
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+font_path = "C:/Windows/Fonts/malgun.ttf"  # 말굿체
+fontprop = fm.FontProperties(fname=font_path, size=14)
+plt.rc('font', family=fontprop.get_name())
 
 # EasyOCR 리더: 한글 + 영어 사용
 reader = easyocr.Reader(['ko', 'en'], gpu=False)

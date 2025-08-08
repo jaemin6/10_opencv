@@ -42,6 +42,8 @@ for bbox, text, conf in results:
         plt.text(top_left[0], top_left[1] - 10,
                  f'{text} ({conf:.2f})',
                  color='red', fontsize=12, fontproperties=fontprop)
+        print(f"텍스트: {text}, 정확도: {conf:.2f}")
+
 
 # 7. 출력
 plt.axis('off')

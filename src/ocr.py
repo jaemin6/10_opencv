@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 reader = easyocr.Reader(['ko', 'en'], gpu=False)
-img_path = '../img/han.jpg'
+img_path = '../img/sign.jpg'
 img = cv2.imread(img_path)
 # 1. 이미지 불러오기 
 #plt.figure(figsize=(8,8))
